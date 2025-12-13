@@ -6,22 +6,23 @@
   <title>미션 1</title>
 </head>
 <body>
-  <h2>🕵️ 미션 1</h2>
-  <p>우리가 처음 만난 년도는?</p>
+<h2>🕵️ 미션 1</h2>
+<p>우리가 처음 만난 년도는?</p>
 
-  <input id="answer">
-  <body style="text-align:center;">
-  <script>
-    function check() {
-      const answer = document.getElementById("answer").value;
-      if (answer === "2020") {
-        alert("정답! 🎉");
-        window.location.href = "mission2.html";
-      } else {
-        alert("땡! 다시 생각해 😜");
-      }
+<input id="answer" placeholder="정답 입력">
+<button onclick="check()">제출</button>
+
+<script>
+  function check() {
+    const answer = document.getElementById("answer").value;
+    if (answer === "2020") {
+      alert("정답! 🎉");
+      window.location.href = "mission2.html";
+    } else {
+      alert("다시 생각해봐 😜");
     }
-  </script>
+  }
+</script>
 </body>
 </html>
 
