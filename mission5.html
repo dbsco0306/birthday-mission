@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎂 Birthday Mission 🎂</title>
+  <title>🎂 RunningGirl(유은채편) 🎂</title>
 
   <style>
     .input-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
-    }
-
+}
     body {
       margin: 0;
       padding: 0;
@@ -99,22 +98,35 @@
 </head>
 
 <body>
-  <div class="mission-card">
+<div class="mission-card">
+  <div class="badge">MISSION 1</div>
 
-    <!-- 🔴 미션 단계 -->
-    <div class="badge">MISSION X</div>
+  <h2>🕵️ 추억 미션</h2>
+  <p>우리가 처음 만난 년도는?</p>
 
-    <!-- ⭐ 페이지별 내용 ⭐ -->
-    <h2>미션 제목</h2>
-    <p>미션 설명</p>
-
-<div class="input-group">
-  <input id="answer" placeholder="정답 입력">
-  <button onclick="check()">제출</button>
+  <div class="input-group">
+    <input id="answer" placeholder="정답 입력">
+    <button onclick="check()">제출</button>
+  </div>
 </div>
 
 
+
+<script>
+  function check() {
+    if (document.getElementById("answer").value === "2019") {
+      window.location.href = "mission2.html";
+    } else {
+      alert("너 장난하니?");
+    }
+  }
+</script>
+
   </div>
 </body>
+</html>
+
+
+
 </html>
 
