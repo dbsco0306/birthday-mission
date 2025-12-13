@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미션 2</title>
+</head>
+<body>
+  <h2>🧩 미션 2</h2>
+  <p>우리가 가장 많이 갔던 카페 이름은?</p>
+
+  <input id="answer">
+  <button onclick="check()">제출</button>
+
+  <script>
+    function check() {
+      const answer = document.getElementById("answer").value;
+      if (answer === "스타벅스") {
+        alert("정답!! ☕");
+        window.location.href = "final.html";
+      } else {
+        alert("힌트: 집 근처 ☕");
+      }
+    }
+  </script>
+</body>
+</html>
