@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #fdfbfb, #ebedee);
       min-height: 100vh;
       display: flex;
@@ -19,78 +19,75 @@
 
     .mission-card {
       background: white;
-      width: 100%;
-      max-width: 420px;
-      margin: 20px;
-      padding: 28px;
-      border-radius: 26px;
-      box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+      width: 92%;
+      max-width: 360px;
+      padding: 18px;
+      border-radius: 18px;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.15);
       text-align: center;
       position: relative;
-      animation: fadeIn 0.6s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     .badge {
       position: absolute;
-      top: -14px;
+      top: -10px;
       left: 50%;
       transform: translateX(-50%);
-      background: linear-gradient(135deg, #ff7a7a, #ff5252);
+      background: #ff7a7a;
       color: white;
-      padding: 6px 18px;
-      border-radius: 20px;
-      font-size: 14px;
+      padding: 4px 14px;
+      border-radius: 14px;
+      font-size: 12px;
       font-weight: bold;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     }
 
-    h1, h2 {
-      margin-top: 18px;
-      margin-bottom: 10px;
+    h1 {
+      font-size: 22px;
+      margin: 14px 0 8px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 14px 0 6px;
     }
 
     p {
-      line-height: 1.6;
-      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 10px 0;
       color: #444;
     }
 
     img {
       width: 100%;
-      border-radius: 18px;
-      margin: 16px 0;
+      border-radius: 14px;
+      margin: 10px 0;
     }
 
     input {
       width: 100%;
-      padding: 14px;
-      font-size: 16px;
-      border-radius: 14px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 10px;
       border: 1px solid #ccc;
       box-sizing: border-box;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     button {
-      margin-top: 22px;
+      margin-top: 14px;
       width: 100%;
-      padding: 16px;
-      font-size: 18px;
+      padding: 12px;
+      font-size: 15px;
       border: none;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #ff7a7a, #ff5252);
+      border-radius: 12px;
+      background: #ff7a7a;
       color: white;
       cursor: pointer;
-      transition: transform 0.1s;
     }
 
     button:active {
-      transform: scale(0.97);
+      transform: scale(0.98);
     }
   </style>
 </head>
