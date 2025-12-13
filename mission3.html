@@ -107,22 +107,29 @@
 </head>
 
 <body>
-  <div class="badge">MISSION 3</div>
-<h2>📸 사진 미션</h2>
-<p>백랄포즈를 따라하여 이지원에게 보내시오</p>
+  <div class="mission-card">
 
-<img src="백랄포즈.jpg" class="mission-img" >
+    <div class="badge">MISSION 3</div>
 
-<input id="answer" placeholder="정답 입력">
-<button onclick="check()">제출</button>
+    <h2>📸 사진 미션</h2>
+    <p>백랄포즈를 따라하여 이지원에게 보내시오</p>
 
-<script>
-  function check() {
-    if (document.getElementById("answer").value.trim() === "백랄") {
-      window.location.href = "final.html";
+    <img src="백랄포즈.jpg" class="mission-img">
+
+    <div class="input-group">
+      <input id="answer" placeholder="정답 입력">
+      <button onclick="check()">제출</button>
+    </div>
+
   </div>
-</div>
-  
-  </div>
+
+  <script>
+    function check() {
+      if (document.getElementById("answer").value.trim() === "백랄") {
+        window.location.href = "final.html";
+      }
+    }
+  </script>
 </body>
+
 </html>
