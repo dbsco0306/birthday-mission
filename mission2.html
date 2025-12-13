@@ -6,6 +6,12 @@
   <title>🎂 RunningGirl(유은채편) 🎂</title>
 
   <style>
+    .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
     body {
       margin: 0;
       padding: 0;
@@ -93,11 +99,17 @@
 </head>
 
 <body>
+  <div class="mission-card">
+  <div class="badge">MISSION 2</div>
+    
   <h2>🧩 미션 2</h2>
   <p>강남역 4번출구에 붙어있는 핑크색 팜플렛을 확인하시오.</p>
 
-  <input id="answer">
-  <button onclick="check()">제출</button>
+  <div class="input-group">
+    <input id="answer" placeholder="정답 입력">
+    <button onclick="check()">제출</button>
+  </div>
+</div>
 
   <script>
     function check() {
