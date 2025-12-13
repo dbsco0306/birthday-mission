@@ -3,19 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎉Running Girl (유은채편) 🎉</title>
+  <title>🎂 RunningGirl(유은채편) 🎂</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mission-card {
+      background: white;
+      width: 100%;
+      max-width: 420px;
+      margin: 20px;
+      padding: 28px;
+      border-radius: 26px;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+      text-align: center;
+      position: relative;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #ff7a7a, #ff5252);
+      color: white;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 16px 0;
+      color: #444;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 18px;
+      margin: 16px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 14px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 22px;
+      width: 100%;
+      padding: 16px;
+      font-size: 18px;
+      border: none;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ff7a7a, #ff5252);
+      color: white;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family: Arial, sans-serif;">
-  <h1>🎂 Running Girl (유은채편) START 🎂</h1>
-<p>모든 미션 성공 시 우리가 있는 장소를 알려줄게 🎁</p>
 
-<button onclick="start()">미션 시작</button>
+<body>
+  <div class="mission-card">
 
-<script>
-  function start() {
-    window.location.href = "mission1.html";
-  }
-</script>
+    <!-- 🔴 미션 단계 뱃지 -->
+    <div class="badge">MISSION X</div>
 
+    <!-- ⭐ 여기부터 페이지별 내용만 수정 ⭐ -->
+
+    <h2>RunningGirl</h2>
+    <p>다음 주어지는 미션을 성공 시 장소 공개</p>
+
+    <!-- 필요하면 이미지 -->
+    <!-- <img src="photo.jpg"> -->
+
+    <!-- 필요하면 입력창 -->
+    <!-- <input id="answer" placeholder="정답 입력"> -->
+
+    <!-- 필요하면 버튼 -->
+    <!-- <button onclick="check()">제출</button> -->
+
+    <!-- ⭐ 여기까지 ⭐ -->
+
+  </div>
 </body>
 </html>
