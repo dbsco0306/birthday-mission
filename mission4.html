@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎂 RunningGirl 🎂</title>
+  <title>🎂 RunningGirl(유은채편) 🎂</title>
 
   <style>
     .input-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
-    }
-
+}
     body {
       margin: 0;
       padding: 0;
@@ -99,29 +98,34 @@
 </head>
 
 <body>
-  <div class="mission-card">
+<div class="mission-card">
+  <div class="badge">MISSION 1</div>
 
-    <!-- 🔴 미션 단계 -->
-    <div class="badge">MISSION 4</div>
+  <h2>🕵️ 추억 미션</h2>
+  <p>1-4반에서 가장 독단적인 행동을 하며 표독스러운 아이는?</p>
 
-    <!-- ⭐ 페이지별 내용 ⭐ -->
-    <h2>추억 미션</h2>
-    <p>1-4반에서 가장 독단적인 행동을 하며 표독스러운 남자아이 이름은?</p>
+  <div class="input-group">
+    <input id="answer" placeholder="정답 입력">
+    <button onclick="check()">제출</button>
+  </div>
+</div>
 
-<div class="answer">
-  <input id="answer" placeholder="정답">
-  <button onclick="check()">제출</button>
-  
+
+
 <script>
-    function check() {
-      const answer = document.getElementById("answer").value;
-      if (answer === "최연욱") {
-        alert("정답!! ");
-        window.location.href = "mission5.html";
-      } else {
-        alert("힌트: 전지우친구");
-      }
+  function check() {
+    if (document.getElementById("answer").value === "최연욱") {
+      window.location.href = "mission2.html";
+    } else {
+      alert("지우친구");
     }
-  </script>
+  }
+</script>
+
+  </div>
 </body>
+</html>
+
+
+
 </html>
